@@ -6,12 +6,12 @@ resources:
 
 variables:
 
-  dockerRegistryServiceConnection: 'e11f71d0-3fdb-4ac9-9b69-27818fc14b92'
+  dockerRegistryServiceConnection: 'ec7e25db-8840-4549-957f-48e7aed47b95'
   imageRepository: 'flaskapplatest'
   containerRegistry: 'platformtest2024.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'platformtest2024511020dc-auth'
+  imagePullSecret: 'platformtest20242033210e-auth'
 
   # Specify your agent pool name
   agentPoolName: 'vm-pool'
