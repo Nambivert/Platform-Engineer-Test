@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: flaskapplatest 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flaskapplatest
+  template:
+    metadata:
+      labels:
+        app: flaskapplatest 
+    spec:
+      containers:
+        - name: flaskapplatest 
+          image: platformtest2024.azurecr.io/flaskapplatest
+          ports:
+          - containerPort: 80
