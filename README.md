@@ -41,5 +41,5 @@ Manual apply using kubectl apply -f ./manifests
 
 ### Azure Pipelines YAML:
 
-[azure-pipelines.yml](azure-pipelines.yml)
+[Build-Push-to-ACR-Deploy-to-AKS.yml](Build-Push-to-ACR-Deploy-to-AKS.yml)
 ```
