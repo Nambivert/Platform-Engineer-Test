@@ -14,7 +14,7 @@ variables:
   imagePullSecret: 'platformtest2024511020dc-auth'
 
   # Specify your agent pool name
-  agentPoolName: 'aks-pool'
+  agentPoolName: 'vm-pool'
 
 stages:
 - stage: Build
