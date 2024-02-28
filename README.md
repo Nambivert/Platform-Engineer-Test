@@ -32,14 +32,13 @@ terraform apply
 
 ## 3. Create CI/CD pipeline in Azure DevOps
 
-Integrate this GitHub repository with Azure Pipelines and utilize the YAML configuration in [azure-pipelines.yml](azure-pipelines.yml) for Docker image build and push to Azure Container Registry (ACR), and deployment to the AKS cluster.
-
-### Manifests:
+### Prepare Manifests:
 
 Find Kubernetes manifests in the `manifests` folder. (Deployment and Service YAML manifests)
 Manual apply using kubectl apply -f ./manifests
 
-### Azure Pipelines YAML:
+### Prepare ADO Pipeline YAML
 
-[Build-Push-to-ACR-Deploy-to-AKS.yml](Build-Push-to-ACR-Deploy-to-AKS.yml)
+Integrate this GitHub repository with Azure Pipelines and utilize the YAML configuration in [azure-pipelines.yml](azure-pipelines.yml) for Docker image build and push to Azure Container Registry (ACR), and deployment to the AKS cluster.
+
 ```
