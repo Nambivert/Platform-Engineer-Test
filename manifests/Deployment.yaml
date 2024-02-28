@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask-app-container
-        image: youracr.azurecr.io/flask-app:latest
+        image: platformtest2024.azurecr.io/flask-app:latest
         ports:
         - containerPort: 8080
         resources:
