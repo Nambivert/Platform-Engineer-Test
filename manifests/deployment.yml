@@ -1,19 +1,27 @@
-apiVersion : apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flaskapplatest 
+  name: flask-app-deployment
+  namespace: platform-test
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: flaskapplatest
+      app: flask-app
   template:
     metadata:
       labels:
-        app: flaskapplatest 
+        app: flask-app
     spec:
       containers:
-        - name: flaskapplatest 
-          image: platformtest2024.azurecr.io/flaskapplatest
-          ports:
-          - containerPort: 8080
+      - name: flask-app-container
+        image: platformtest2024.azurecr.io/flask-app
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "256m"
+          limits:
+            memory: "256Mi"
+            cpu: "512m"
