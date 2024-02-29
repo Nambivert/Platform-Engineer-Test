@@ -40,3 +40,6 @@ Manual apply using kubectl apply -f ./manifests
 ### Prepare ADO Pipeline YAML
 
 Integrate this GitHub repository with Azure Pipelines and utilize the YAML configuration in [azure-pipelines.yml](azure-pipelines.yml) for Docker image build and push to Azure Container Registry (ACR), and deployment to the AKS cluster.
+
+### Successful ADO pipeline (Image)
+![image](https://github.com/Nambivert/Platform-Engineer-Test/assets/79801348/bead20a1-cc59-4f81-b40f-3cc194499fa8)
