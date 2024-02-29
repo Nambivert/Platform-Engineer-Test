@@ -1,6 +1,6 @@
 # Platform-Engineer-Test
 
-This repository contains steps and resources for deploying a sample containerized application to Azure Kubernetes Service (AKS) using Infrastructure as Code (IaC) and Azure DevOps.
+This repository contains steps and resources for deploying a containerized application (Python - Hello 2022 with Headers) to Azure Kubernetes Service (AKS) using Infrastructure as Code (IaC) and Azure DevOps.
 
 ## 1. Create the Flask application and prepare Dockerfile
 
